@@ -14,28 +14,28 @@
                 <Button Click="b1_Click" Name="b1" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >1</Button>
-                <Button Click="b2_Click" Name="b2" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b2" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >2</Button>
-                <Button Click="b3_Click" Name="b3" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b3" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >3</Button>
-                <Button Click="b4_Click" Name="b4" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b4" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >4</Button>
-                <Button Click="b5_Click" Name="b5" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b5" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >5</Button>
-                <Button Click="b6_Click" Name="b6" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b6" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >6</Button>
-                <Button Click="b7_Click" Name="b7" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b7" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >7</Button>
-                <Button Click="b8_Click" Name="b8" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b8" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >8</Button>
-                <Button Click="b9_Click" Name="b9" FontSize="40" Margin="5" Height="100"
+                <Button Click="b1_Click" Name="b9" FontSize="40" Margin="5" Height="100"
                         Width="100"
                         >9</Button>
             </WrapPanel>

@@ -37,53 +37,13 @@ namespace TicTacToeClient
                 App.Current.Dispatcher.Invoke(() =>
                 {
                     var bt = sender as Button;
-                    string request = bt.Content.ToString() + player.Text.Split(' ')[2];
+                    string request = bt.Content.ToString()+player.Text.Split(' ')[2];
                     SendString(request);
-
-                    // EnabledAllButtons(false);
                 });
             });
         }
 
-        private void b2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b3_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b4_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b5_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b6_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b7_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b8_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void b9_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+ 
 
         private void Connect_Click(object sender, RoutedEventArgs e)
         {
@@ -113,7 +73,7 @@ namespace TicTacToeClient
             IntegrateToView(text);
         }
 
-        public bool HasSecondPlayerStart { get; set; } = false;
+        //public bool HasSecondPlayerStart { get; set; } = false;
         private void IntegrateToView(string text)
         {
             App.Current.Dispatcher.Invoke(() =>
@@ -134,17 +94,17 @@ namespace TicTacToeClient
                 b7.Content = row3[0];
                 b8.Content = row3[1];
                 b9.Content = row3[2];
-                // EnabledAllButtons(true);
+            
             });
         }
         private void ConnectToServer()
         {
-            int attempts = 0;
+            //int attempts = 0;
             while (!ClientSocket.Connected)
             {
                 try
                 {
-                    ++attempts;
+                    //++attempts;
                     ClientSocket.Connect(IPAddress.Parse("192.168.1.106"), port);
                 }
                 catch (Exception)
@@ -152,7 +112,7 @@ namespace TicTacToeClient
                 }
             }
 
-            MessageBox.Show("Connected");
+            MessageBox.Show("Connected to game ");
 
             var buffer = new byte[2048];
             int received = ClientSocket.Receive(buffer, SocketFlags.None);
